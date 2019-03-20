@@ -14,33 +14,68 @@
 
   <section>
     <form method="POST" action="">
+
       <div>
         <h1>Apply to be a tree planter</h1>
         <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+
         <fieldset>
           <legend class="push mega italic">Personal details</legend>
+
           <div class="grid">
+
             <div class="push pad-r unit xs-1 s-1 m-1 l-1-2">
-              <label for="name">Name</label>
+              <label for="name">Full Name</label>
               <input id="name" name="name">
+              <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
             </div>
-            <div class="push unit xs-1 s-1 m-1 l-1-2 pad-l">
-              <label for="age">Age</label>
-              <input id="age" name="age">
+
+            <div class="push unit xs-1 s-1 m-1 l-1-2">
+              <label for="name">What should we call you?</label>
+              <input id="name" name="name">
+              <p>What all your friends call you, e.g. “Liz”.</p>
             </div>
-            <div class="push unit xs-1 s-1 m-1 l-1-2 pad-r">
+
+            <div class="push unit xs-1 s-1 m-1 l-1-2">
+              <label for="email">Date of birth</label>
+              <input id="date" type="date" placeholder="(yyy-mm-dd)" name="date" required>
+            </div>
+
+            <div class="push unit xs-1 s-1 m-1 l-1-2 push pad-l">
+              <label for="subject">T-shirt size</label>
+              <select id="subject" placeholder="Select a t-shirt size" name="_subject" required>
+                <option></option>
+                <option>Fitted: XS</option>
+                <option>Fitted: S</option>
+                <option>Fitted: M</option>
+                <option>Fitted: L</option>
+                <option>Fitted: XL</option>
+                <option>Straight-cut: XS</option>
+                <option>Straight-cut: S</option>
+                <option>Straight-cut: M</option>
+                <option>Straight-cut: L</option>
+                <option>Straight-cut: XL</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="push mega italic">Address</legend>
+
+            <div class="grid">
+
+              <div class="push pad-r unit xs-1 s-1 m-1 l-1-2">
+                <label for="name">Street address</label>
+                <input id="name" name="name">
+                <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+              </div>
+          </fieldset>
+
+            <div class="push unit xs-1 s-1 m-1 l-1-2">
               <label for="email">Email</label>
               <input id="email" type="email" placeholder="me@me.com" name="email" required>
             </div>
-            <div class="push unit xs-1 s-1 m-1 l-1-2 push pad-l">
-              <label for="subject">Physical fitness</label>
-              <select id="subject" name="_subject">
-                <option>Super-human</option>
-                <option>Fit as a fiddle</option>
-                <option>Not terribly strong</option>
-                <option>A little couch-potato-y</option>
-              </select>
-            </div>
+
             <div class="unit xs-1 s-1 m-1 l-1">
               <label for="address">Address</label>
               <textarea id="address" name="address" required></textarea>

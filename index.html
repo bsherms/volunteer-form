@@ -26,13 +26,13 @@
 
             <div class="push pad-r unit xs-1 s-1 m-1 l-1-2">
               <label for="name">Full Name</label>
-              <input id="name" name="name">
+              <input id="name" name="name" required>
               <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
             </div>
 
             <div class="push unit xs-1 s-1 m-1 l-1-2">
               <label for="name">What should we call you?</label>
-              <input id="name" name="name">
+              <input id="name" name="name" required>
               <p>What all your friends call you, e.g. “Liz”.</p>
             </div>
 
@@ -64,8 +64,8 @@
             </div>
 
             <div class="push unit xs-1 s-1 m-1 l-1-2">
-              <label class="optional" for="email">Phone number</label>
-              <input id="email" type="email" name="email">
+              <label class="phone" for="tel">Phone number</label>
+              <input id="tel" type="tel" name="tel" optional>
             </div>
 
           </fieldset>
@@ -79,7 +79,12 @@
 
               <div class="push pad-r unit xs-1 s-1 m-1 l-1-2">
                 <label for="address">Street address</label>
-                <input id="address" name="address">
+                <input id="address" name="address" required>
+              </div>
+
+              <div class="push pad-r unit xs-1 s-1 m-1 l-1-2">
+                <label for="address">City</label>
+                <input id="address" name="address" required>
               </div>
 
               <div class="push unit xs-1 s-1 m-1 l-1-2 push pad-l">
@@ -101,13 +106,170 @@
                   <option>Yukon</option>
                 </select>
               </div>
+
+              <div class="push pad-r unit xs-1 s-1 m-1 l-1-2">
+                <label for="address">Postal Code</label>
+                <input id="address" name="address" required>
+              </div>
+
           </fieldset>
 
           <hr>
 
-            <div class="unit xs-1 s-1 m-1 l-1">
-              <label for="address">Address</label>
-              <textarea id="address" name="address" required></textarea>
+          <fieldset>
+            <legend class="push mega italic">What activities are you interested in helping with?</legend>
+
+            <div class="grid">
+
+              <div class="unit xs-1 s-1 m-1-2 l-1-2">
+                <label for="checkbox">Digging holes</label>
+                <input type="checkbox" name="checkbox">
+              </div>
+
+              <div class="unit xs-1 s-1 m-1-2 l-1-2">
+                <label for="checkbox">Getting dirty</label>
+                <input type="checkbox" name="checkbox">
+              </div>
+
+              <div class="unit xs-1 s-1 m-1-2 l-1-2">
+                <label for="checkbox">Lifting heavy objects</label>
+                <input type="checkbox" name="checkbox">
+              </div>
+
+              <div class="unit xs-1 s-1 m-1-2 l-1-2">
+                <label for="checkbox">Driving people</label>
+                <input type="checkbox" name="checkbox">
+              </div>
+
+              <div class="unit xs-1 s-1 m-1-2 l-1-2">
+                <label for="checkbox">Transporting trees</label>
+                <input type="checkbox" name="checkbox">
+              </div>
+
+              <div class="unit xs-1 s-1 m-1-2 l-1-2">
+                <label for="checkbox">Taking photos</label>
+                <input type="checkbox" name="checkbox">
+              </div>
+
+              <div class="unit xs-1 s-1 m-1-2 l-1-2">
+                <label for="checkbox">Online publishing</label>
+                <input type="checkbox" name="checkbox">
+              </div>
+
+              <div class="unit xs-1 s-1 m-1-2 l-1-2">
+                <label for="checkbox">Managing people</label>
+                <input type="checkbox" name="checkbox">
+              </div>
+            </div>
+          </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <legend class="push mega italic">What activities are you interested in helping with?</legend>
+
+          <div class="grid">
+
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <label for="checkbox">Shovels</label>
+              <input type="checkbox" name="checkbox">
+            </div>
+
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <label for="checkbox">Hand-held GPS</label>
+              <input type="checkbox" name="checkbox">
+            </div>
+
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <label for="checkbox">Writing & blogging</label>
+              <input type="checkbox" name="checkbox">
+            </div>
+
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <label for="checkbox">Photography</label>
+              <input type="checkbox" name="checkbox">
+            </div>
+
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <label for="checkbox">Trail & hill climbing</label>
+              <input type="checkbox" name="checkbox">
+            </div>
+
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <label for="checkbox">Bush craft</label>
+              <input type="checkbox" name="checkbox">
+            </div>
+
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <label for="checkbox">ATVs</label>
+              <input type="checkbox" name="checkbox">
+            </div>
+
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <label for="checkbox">Plant identification</label>
+              <input type="checkbox" name="checkbox">
+            </div>
+
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <label for="checkbox">Special event planning</label>
+              <input type="checkbox" name="checkbox">
+            </div>
+
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <label for="checkbox">Speaking to groups</label>
+              <input type="checkbox" name="checkbox">
+            </div>
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <legend>Do you have a valid driver’s license?</legend>
+
+          <div>
+            <label for="checkbox">Yes</label>
+            <input type="radio" name="rdaio">
+          </div>
+          <div>
+            <label for="checkbox">No</label>
+            <input type="radio" name="rdaio">
+          </div>
+
+          <legend>Do you have a pick-up truck you’d be willing to use?</legend>
+
+          <div>
+            <label for="checkbox">Yes</label>
+            <input type="radio" name="rdaio">
+          </div>
+          <div>
+            <label for="checkbox">No</label>
+            <input type="radio" name="rdaio">
+          </div>
+
+          <legend>Do you have up-to-date first-aid certification?</legend>
+
+          <div>
+            <label for="checkbox">Yes</label>
+            <input type="radio" name="rdaio">
+          </div>
+          <div>
+            <label for="checkbox">No</label>
+            <input type="radio" name="rdaio">
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="push-0">
+          <legend class="push smega italic">Mission statement</legend>
+          <div class="grid">
+            <div class="push unit xs-1 s-1 m-1 l-1">
+              <label for="text">Please let us know any comments or questions you may have.</label>
+              <textarea id="text" name="mission" required></textarea>
+            </div>
+            <div class="unit xs-1 s-1 m-1 l-1 text-center">
+              <button class="btn padding push-2" type="submit">Apply</button>
             </div>
           </div>
         </fieldset>
